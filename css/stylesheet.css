@@ -1,0 +1,63 @@
+@media screen and (min-width: 768px){
+}
+
+@media screen and (max-width: 767px) {
+        body {font-size: 150%;}
+}
+
+ul {
+	list-style: none;
+	background-color: #DB487F;
+}
+
+li {
+	display: inline-block;
+	padding: .5%;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#logo {
+	max-width: 15%;
+	padding-top: 1%;
+}
+
+a {
+	text-decoration: none;
+	font-size: 13pt;
+	color: white;
+}
+
+a:hover {
+	border-bottom: 3px solid black;
+}
+
+.active {
+	border-bottom: 3px solid black;
+}
+
+.center {
+	margin: auto;
+	text-align: center;
+}
+
+body {
+	background: white;
+	margin: 0;
+}
+
+.nav-wrapper {
+//	position: fixed;
+//	top: 0;
+	width: 100%;
+	background: black;
+	background-image:
+		radial-gradient(white 25%, transparent 0),
+		radial-gradient(white 25%, transparent 0);
+	background-size: 30px 30px;
+	background-position: 0 0 , 15px 15px;
+}
+
+hr {
+	background-color: #DB487F;
+}
