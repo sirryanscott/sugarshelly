@@ -24,8 +24,9 @@ li {
 }
 
 #logo {
-	max-width: 15%;
-	padding-top: 1%;
+	width: 15%;
+	padding-top: .5%;
+	padding-bottom: 0;
 }
 
 a {
@@ -46,47 +47,15 @@ li > a:hover {
 	text-align: center;
 }
 
-
-.row-gallery {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 4px;
-	margin: auto;
-	width: 40%;
-}
-
-.column-gallery {
-	flex: 50%;
-	max-width: 50%;
-	padding: 0 4px;
-}
-
-.column-gallery img {
-	margin-top: 8px;
-	vertical-align: middle;
-}
-
 .gallery-menu-wrapper {
 	display: flex;
 	flex-direction: row;
-	width: 40%;
+	width: 80%;
 	flex-wrap: nowrap;
 	justify-content: center;
 	margin: auto;
 }
 
-.wedding-cakes-wrapper {
-	display: flex;
-	flex-direction: row;
-	width: 80%;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: auto;
-}
-
-.wedding-cakes-wrapper > div {
-	max-width: 33%;
-}
 
 h1 {
 	width: 100%;
@@ -118,7 +87,7 @@ h1 {
 	padding: 0 4px;
 }
 
-.column img, .two-col img {
+.column img, .two-col img, .two-col a {
 	margin-top: 8px;
 	vertical-align: middle;
 }
@@ -179,22 +148,49 @@ img {
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
-    .column, .two-col {
-        flex: 50%;
-        max-width: 50%;
-    }
+.column, .two-col {
+flex: 50%;
+max-width: 50%;
+}
+
 .prices-wrapper {
 	width: 100%;
+}
+
+#about {
+	width: 90%;
+}
+
+#logo {
+	width: 40%;
 }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media (max-width: 600px) {
-    .column, .two-col {
-        flex: 100%;
-        max-width: 100%;
-    }
+.column, .two-col {
+flex: 100%;
+max-width: 100%;
+}
+
 .prices-wrapper {
 	width: 100%;
+}
+
+#about {
+	width: 90%;
+}
+
+.gallery-menu-wrapper {
+	width: 100%;
+	padding: 2px;
+}
+
+.gallery-menu-wrapper img {
+	padding: 2px;
+}
+
+#logo {
+	width: 40%;
 }
 }
