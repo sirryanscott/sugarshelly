@@ -9,6 +9,11 @@ body {
 	font-size: 18pt;
 }
 
+#home-title {
+	padding-top: 200px;
+	font-family: 'Varela Round', sans-serif;
+}
+
 ul {
 	padding: 0;
 	margin: 0;
@@ -103,12 +108,46 @@ img {
 	padding: 20px;
 }
 
+#wedding-canvas {
+	background: url("../images/portfolio/wedding-canvas.jpg") 50% 0 no-repeat fixed;
+	background-size: cover;
+}
+
+#birthday-canvas {
+	background: url("../images/portfolio/birthday-canvas.jpg") 50% 0 no-repeat fixed;
+	background-size: cover;
+}
+
+#holiday-canvas {
+	background: url("../images/portfolio/holiday.jpg") 50% 0 no-repeat fixed;
+	background-size: cover;
+}
+
+#celebration-canvas {
+	background: url("../images/portfolio/celebration.jpg") 50% 0 no-repeat fixed;
+	background-size: cover;
+}
+
 .canvas {
 	width: 100%;
-	height: 300px;
-	padding: 0;
+	height: 500px;
+	margin-bottom: 400px;
 	overflow: hidden;
-	display: none;
+}
+
+.canvas-top {
+	margin-top: 200px;
+}
+
+.canvas-bottom {
+	margin-bottom: 200px;
+}
+
+.canvas h1 {
+	color: white;
+	background-color: rgba(219, 72, 127, .6);
+	font-size: 70pt;
+	margin-top: 180px;
 }
 
 .canvas > img {
