@@ -1,8 +1,17 @@
-@media screen and (min-width: 768px){
+* {
+    box-sizing: border-box;
 }
 
+body {
+	background: white;
+	margin: 0;
+	font-family: 'Grand Hotel', cursive;
+	font-size: 18pt;
+}
 
 ul {
+	padding: 0;
+	margin: 0;
 	list-style: none;
 	background-color: #DB487F;
 }
@@ -21,11 +30,10 @@ li {
 
 a {
 	text-decoration: none;
-	font-size: 18pt;
 	color: white;
 }
 
-a:hover {
+li > a:hover {
 	border-bottom: 3px solid black;
 }
 
@@ -38,10 +46,123 @@ a:hover {
 	text-align: center;
 }
 
-body {
-	background: white;
-	margin: 0;
-	font-family: 'Grand Hotel', cursive;
+
+.row-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	margin: auto;
+	width: 40%;
+}
+
+.column-gallery {
+	flex: 50%;
+	max-width: 50%;
+	padding: 0 4px;
+}
+
+.column-gallery img {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+.gallery-menu-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 40%;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin: auto;
+}
+
+.wedding-cakes-wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+}
+
+.wedding-cakes-wrapper > div {
+	max-width: 33%;
+}
+
+h1 {
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: #DB487F;
+	color: #DB487F;
+	background-color: white;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	margin: auto;
+	justify-content: center;
+}
+
+.column {
+	flex: 33%;
+	max-width: 33%;
+	padding: 0 4px;
+}
+
+.two-col {
+	flex: 40%;
+	max-width: 40%;
+	padding: 0 4px;
+}
+
+.column img, .two-col img {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+img {
+	width: 100%;
+	padding: 20px;
+}
+
+.canvas {
+	width: 100%;
+	height: 300px;
+	padding: 0;
+	overflow: hidden;
+	display: none;
+}
+
+.canvas > img {
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+
+#about {
+	width: 50%;
+	margin: auto;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.prices-wrapper {
+	width: 60%;
+	margin: auto;
+}
+
+.price-item {
+	border-style: outset;
+	margin-top: 20px;
+	padding: 20px;
+	text-align: center;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.image-click:hover {
+	opacity: .5;
 }
 
 .nav-wrapper {
@@ -56,10 +177,24 @@ body {
 	background-position: 0 0 , 15px 15px;
 }
 
-hr {
-	background-color: #DB487F;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column, .two-col {
+        flex: 50%;
+        max-width: 50%;
+    }
+.prices-wrapper {
+	width: 100%;
+}
 }
 
-@media screen and (max-width: 767px) {
-        body {font-size: 150%;}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column, .two-col {
+        flex: 100%;
+        max-width: 100%;
+    }
+.prices-wrapper {
+	width: 100%;
+}
 }
