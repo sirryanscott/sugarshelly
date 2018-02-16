@@ -2,10 +2,13 @@
 <html>
         <head>
                 <meta name="viewport" content="width=device-width"/>
+                <meta name="format-detection" content="telephone=no">
 
-                <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
                 <link href="https://fonts.googleapis.com/css?family=Grand+Hotel" rel="stylesheet">
                 <link rel="stylesheet" type="text/css" href="/css/stylesheet.css"/>
+                <link rel="icon" type="image/png" href="/images/icon.png"/>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
                 <title>Spoonful of Sugar</title>
         </head>
         <body>
@@ -47,8 +50,47 @@
                         </div>
                 </div>
                 <div class="footer">
-                        <p><a href="https://github.com/sirryanscott/sugarshelly.git">Link to Repository</a></p>
+                        <div id="footer-content" class="row">
+                                <div class="small-side-col logo">
+                                        <div id="footer-logo-wrapper">
+                                                <img src="/images/logo-round.png" alt="logo"/>
+                                        </div>
+                                        <div id="facebook-logo">
+                                                <a href="https://www.facebook.com/Spoonful-of-Sugar-bakery-180404402559223/" target="_blank"><img src="/images/f_logo_online/f_logo_online/png/FB-f-Logo__white_114.png"/></a>
+                                        </div>
+                                </div>
+
+                                <div class="big-side-col">
+                                        <div class="row">
+                                                <div class="three-col">
+                                                        <h3>Location</h3>
+                                                        <p>Saratoga Springs, UT</p>
+                                                </div>
+                                                <div class="three-col">
+                                                        <h3>Hours</h3>
+                                                        <p>Call or Text</p>
+                                                        <p>Mon-Sat: 8:00am - 5:00pm</p>
+                                                </div>
+
+                                                <div class="three-col">
+                                                        <h3>Contact</h3>
+                                                        <p><a class="phone" href="tel:+1-951-285-0029">1-951-285-0029</a></p>
+                                                        <p><a href="mailto:info@spoonfulofsugarbakery.com">info@spoonfulofsugarbakery.com</a></p>
+                                                </div>
+                                        </div>
+                                        <hr>
+                                        <div id="map" class="row">
+                                        </div>
+                                </div>
+                        </div>
+
+                        <a id="github" href="https://github.com/sirryanscott/sugarshelly.git" target="_blank">
+                                <img src="/images/GitHub-Logos/GitHub_Logo_White.png"></img>
+                        </a>
                 </div>
+                <script text="type/javascript" src="/scripts/script.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw2skiQuAeamtbcyay1eYlHfu87B1xH8M">
+                </script>
 
         </body>
 </html>
